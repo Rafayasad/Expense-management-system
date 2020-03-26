@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="header">
+    </div>
+    <div id="mid">
+        <br />
+        <div id="inner-part">
+           <form action="index3.html">
+            <div class="inputfield">
+                Username<br />
+                <input type="text" id="userinfo" class="user-INFO" placeholder="Enter your name...." data-feild="username" required>
+            </div>
+            <br />
+            <div class="inputfield">
+                Email <br />
+                <input type="email" id="userinfo" class="mail" placeholder="Enter your email...." data-feild="Email" required>
+            </div>
+            <br />
+            <div class="inputfield">
+                Password <br />
+                <input type="password" id="userinfo" class="pas" placeholder="Enter your password...." data-feild="password" required>
+            </div>
+            <br />
+            <div id="butt">
+                <button type="submit" id="button">Sign Up</button>
+            </div>
+        </form>
+            <br />
+            <div id="butt">
+                ________ or _________
+                <br /><br />
+                <a href="./index2.html"><button type="submit" id="button2">Sign in</button></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        button.onclick = function()
+        {
+        let user = document.getElementById("userinfo").value;
+        let mail = document.getElementById("userinfo").value;
+        let pass = document.getElementById("userinfo").value;
+        localStorage.setItem("user",user);
+        localStorage.setItem("email",mail);
+        localStorage.setItem("password",pass);
+        }
+    </script>
+</body>
+</html>

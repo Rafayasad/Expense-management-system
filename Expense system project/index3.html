@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="header">
+        Welcome... <span id="result"></span> !
+        <a href="./index.html"><button id="logout" type="button">logout</button></a>
+    </div>
+    <div id="mid">
+        <div id="all-expenses">
+             All Expenses<br />
+            <a href="./index4.html"><button class="bu" type="button">Add Expenses</button></a>
+            <a href="./all-category.html"><button class="bu" type="button">Add Catagory</button></a>
+            <button class="bu" type="button">Gen Report</button>
+            <br />
+            <input type="search" id="search" placeholder="Search by Catagory..." data-field="search">
+            <br />
+        </div>
+        <div id="table">
+        <table id="tab">
+            <tbody>
+                <tr>
+                    <td>Id</td>
+                    <td>Description</td>
+                    <td>Amount</td>
+                    <td>Category</td>
+                    <td>Created on</td>
+                    <td>Actions</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <script>
+        document.getElementById("result").innerHTML=localStorage.getItem("user").toUpperCase();
+    </script>
+    
+</body>
+</html>

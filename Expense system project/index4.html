@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="header">
+        <a href="./index.html"><button id="logout" type="button">logout</button></a>
+        <a href="./index3.html"><button id="deshboard" type="button">Back to Dashboard</button></a>
+    </div>
+    <div id="mid"><br />
+        <h4>Add Expense</h4>
+        <div id="inner-part">
+           <form>
+            <div class="inputfield">
+                Description<br />
+                <input type="text" id="userinfo" placeholder="Enter Description...." data-feild="username" required>
+            </div>
+            <br />
+            <div class="inputfield">
+                Amount <br />
+                <input type="number" id="userinfo" placeholder="Enter Amount...." data-feild="Email" required>
+            </div>
+            <br />
+            <div class="inputfield">
+                Category <br />
+               <select id="user-info" class="sel" data-feild="category">
+                   <option value="Select Category">Select Category</option>
+               </select>
+            </div>
+            <br />
+            <div id="butt">
+                <button type="submit" id="button">Add</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
